@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3C3F898F1C8DE489005730A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F898E1C8DE489005730A3 /* AppDelegate.swift */; };
-		3C3F89911C8DE489005730A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F89901C8DE489005730A3 /* ViewController.swift */; };
 		3C3F89941C8DE489005730A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3F89921C8DE489005730A3 /* Main.storyboard */; };
 		3C3F89961C8DE489005730A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C3F89951C8DE489005730A3 /* Assets.xcassets */; };
 		3C3F89991C8DE489005730A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3F89971C8DE489005730A3 /* LaunchScreen.storyboard */; };
 		3C3F89A41C8DE489005730A3 /* JSON_CoursesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F89A31C8DE489005730A3 /* JSON_CoursesTests.swift */; };
 		3C3F89AF1C8DE489005730A3 /* JSON_CoursesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F89AE1C8DE489005730A3 /* JSON_CoursesUITests.swift */; };
+		3C3F89BD1C8DE4BD005730A3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F89BC1C8DE4BD005730A3 /* SwiftyJSON.swift */; };
+		3C3F89BF1C8DE4D6005730A3 /* ImportCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F89BE1C8DE4D6005730A3 /* ImportCatalog.swift */; };
+		3C3F89C11C8F30D6005730A3 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F89C01C8F30D6005730A3 /* CoursesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		3C3F898B1C8DE489005730A3 /* JSON Courses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JSON Courses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3F898E1C8DE489005730A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C3F89901C8DE489005730A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3C3F89931C8DE489005730A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C3F89951C8DE489005730A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C3F89981C8DE489005730A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		3C3F89AA1C8DE489005730A3 /* JSON CoursesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JSON CoursesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3F89AE1C8DE489005730A3 /* JSON_CoursesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON_CoursesUITests.swift; sourceTree = "<group>"; };
 		3C3F89B01C8DE489005730A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C3F89BC1C8DE4BD005730A3 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		3C3F89BE1C8DE4D6005730A3 /* ImportCatalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportCatalog.swift; sourceTree = "<group>"; };
+		3C3F89C01C8F30D6005730A3 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		3C3F898D1C8DE489005730A3 /* JSON Courses */ = {
 			isa = PBXGroup;
 			children = (
+				3C3F89BC1C8DE4BD005730A3 /* SwiftyJSON.swift */,
+				3C3F89BE1C8DE4D6005730A3 /* ImportCatalog.swift */,
 				3C3F898E1C8DE489005730A3 /* AppDelegate.swift */,
-				3C3F89901C8DE489005730A3 /* ViewController.swift */,
+				3C3F89C01C8F30D6005730A3 /* CoursesTableViewController.swift */,
 				3C3F89921C8DE489005730A3 /* Main.storyboard */,
 				3C3F89951C8DE489005730A3 /* Assets.xcassets */,
 				3C3F89971C8DE489005730A3 /* LaunchScreen.storyboard */,
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C3F89911C8DE489005730A3 /* ViewController.swift in Sources */,
+				3C3F89BF1C8DE4D6005730A3 /* ImportCatalog.swift in Sources */,
+				3C3F89C11C8F30D6005730A3 /* CoursesTableViewController.swift in Sources */,
+				3C3F89BD1C8DE4BD005730A3 /* SwiftyJSON.swift in Sources */,
 				3C3F898F1C8DE489005730A3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
